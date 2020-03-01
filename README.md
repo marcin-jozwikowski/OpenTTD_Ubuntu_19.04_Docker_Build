@@ -16,5 +16,5 @@ docker build -t openttd_builder .
 ## Building OpenTTD
 To build OpenTTD from current source run 
 ```
-docker run -ti -v ./:/OpenTTDReleases/ --rm openttd_builder
+docker run -ti -v $(pwd):/OpenTTDReleases/ --rm openttd_builder
 ```
